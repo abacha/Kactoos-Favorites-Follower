@@ -5,7 +5,7 @@ require_once 'Zend/Oauth/Consumer.php';
  
 // Set OAuth configuration
 $config = array(
-	'callbackUrl' => 'http://localhost/kactoos/teste.php?access=true',
+	'callbackUrl' => 'http://'.$_SERVER['HTTP_HOST'].'/kactoos-ff/index.php?access=true',
 	'siteUrl' => 'http://api.kactoos.com/api/oauth/request_token',
 	'requestScheme' => Zend_Oauth::REQUEST_SCHEME_QUERYSTRING,
 	'requestMethod' => 'GET',
