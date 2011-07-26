@@ -5,7 +5,7 @@ require_once 'Zend/Oauth/Consumer.php';
  
 // Set OAuth configuration
 $config = array(
-	'callbackUrl' => 'http://'.$_SERVER['HTTP_HOST'].'/kactoos-ff/index.php?access=true',
+	'callbackUrl' => 'http://labs.jera.com.br/kactoos-ff/index.php?access=true',
 	'siteUrl' => 'http://api.kactoos.com/api/oauth/request_token',
 	'requestScheme' => Zend_Oauth::REQUEST_SCHEME_QUERYSTRING,
 	'requestMethod' => 'GET',
@@ -49,7 +49,7 @@ if( isset ( $_SESSION['kactoos_access_token'] ) ) {
 	$data = json_decode( $response->getBody() );
 	$result = $response->getBody();
 	//echo $result;
-	//echo '<pre>'; print_r($data); echo '</pre>';
+	echo '<pre>'; print_r($data); echo '</pre>';
 	?>
 	<body>
 		<img src="img_logo_whiteh.png" />
@@ -84,7 +84,7 @@ if( isset ( $_SESSION['kactoos_access_token'] ) ) {
 	
 	.price {
 		font-weight: bold;
-		color: #69B712 !important;
+		iolor: #69B712 !important;
 	}
 
 	.alert {
