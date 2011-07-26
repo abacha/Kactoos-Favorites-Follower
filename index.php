@@ -49,7 +49,7 @@ if( isset ( $_SESSION['kactoos_access_token'] ) ) {
 	$data = json_decode( $response->getBody() );
 	$result = $response->getBody();
 	//echo $result;
-	echo '<pre>'; print_r($data); echo '</pre>';
+//	echo '<pre>'; print_r($data); echo '</pre>';
 	?>
 	<body>
 		<img src="img_logo_whiteh.png" />
